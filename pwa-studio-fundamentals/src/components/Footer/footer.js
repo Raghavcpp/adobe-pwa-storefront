@@ -11,8 +11,13 @@ import Newsletter from '../Newsletter';
 // import defaultClasses from './footer.module.css';
 // import { DEFAULT_LINKS, LOREM_IPSUM } from './sampleData';
 
-import { mergeClasses } from '@magento/venia-ui/lib/classify';
-import defaultClasses from '@magento/venia-ui/lib/components/Footer/footer.css';
+// import { mergeClasses } from '@magento/venia-ui/lib/classify';
+// import defaultClasses from '@magento/venia-ui/lib/components/Footer/footer.css';
+// import { DEFAULT_LINKS, LOREM_IPSUM } from "@magento/venia-ui/lib/components/Footer/sampleData";
+// import GET_STORE_CONFIG_DATA from '@magento/venia-ui/lib/queries/getStoreConfigData.graphql';
+
+import { useStyle } from '@magento/venia-ui/lib/classify';
+import defaultClasses from '@magento/venia-ui/lib/components/Footer/footer.module.css';
 import { DEFAULT_LINKS, LOREM_IPSUM } from "@magento/venia-ui/lib/components/Footer/sampleData";
 import GET_STORE_CONFIG_DATA from '@magento/venia-ui/lib/queries/getStoreConfigData.graphql';
 
