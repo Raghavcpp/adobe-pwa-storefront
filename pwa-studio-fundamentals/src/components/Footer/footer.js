@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom';
 import { shape, string } from 'prop-types';
 import { useFooter } from '@magento/peregrine/lib/talons/Footer/useFooter';
 
-import Logo from '../Logo';
-import Newsletter from '../Newsletter';
+import Logo from '@magento/venia-ui/lib/components/Logo';
+import Newsletter from '@magento/venia-ui/lib/components/Newsletter';
 // import { useStyle } from '../../classify';
 // import defaultClasses from './footer.module.css';
 // import { DEFAULT_LINKS, LOREM_IPSUM } from './sampleData';
@@ -19,8 +19,8 @@ import Newsletter from '../Newsletter';
 import { useStyle } from '@magento/venia-ui/lib/classify';
 import defaultClasses from '@magento/venia-ui/lib/components/Footer/footer.module.css';
 import { DEFAULT_LINKS, LOREM_IPSUM } from "@magento/venia-ui/lib/components/Footer/sampleData";
-import GET_STORE_CONFIG_DATA from '@magento/venia-ui/lib/queries/getStoreConfigData.graphql';
-
+// import GET_STORE_CONFIG_DATA from '@magento/venia-ui/lib/queries/getStoreConfigData.graphql';
+// Module not found: Error: Can't resolve '@magento/venia-ui/lib/queries/getStoreConfigData.graphql' in '/workspaces/adobe-pwa-storefront/pwa-studio-fundamentals/src/components/Footer'
 import resourceUrl from '@magento/peregrine/lib/util/makeUrl';
 
 const Footer = props => {
@@ -68,12 +68,13 @@ const Footer = props => {
 
     return (
         <footer data-cy="Footer-root" className={classes.root}>
-            <div className={classes.links}>
-                <div className={classes.link}>
+            <div className={classes.link}>
                     <Link to="/foo">
                     <span className={classes.label}>Foo Demo Page</span>
                     </Link>
                 </div>
+            <div className={classes.links}>
+                
                 {linkGroups}
                 <div className={classes.callout}>
                     <span
